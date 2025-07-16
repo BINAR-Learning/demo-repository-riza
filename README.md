@@ -1,8 +1,8 @@
-[![Codecov](https://codecov.io/gh/BINAR-Learning/demo-repository/graph/badge.svg?token=A9U236VZ3Q)](https://codecov.io/gh/BINAR-Learning/demo-repository)
+[![Codecov](https://codecov.io/gh/BINAR-Learning/demo-repository-riza/graph/badge.svg?token=A9U236VZ3Q)](https://codecov.io/gh/BINAR-Learning/demo-repository-riza)
 
-# 🛠 Workshop Project - Sesi 11 & 12
+# 🛠 Workshop Project - Sesi 11 & 12 (Refactored Version)
 
-A Next.js application demonstrating JWT authentication, database integration, and legacy code examples for refactoring workshops.
+A Next.js application demonstrating JWT authentication, database integration, and performance optimization after comprehensive refactoring.
 
 ## 🚀 Features
 
@@ -11,13 +11,42 @@ A Next.js application demonstrating JWT authentication, database integration, an
 - **Database Integration**: PostgreSQL with raw SQL queries
 - **Indonesian User Data**: 1000 realistic Indonesian users
 - **Protected APIs**: JWT middleware for secure routes
-- **Legacy Code Examples**: Poor practices for refactoring demo
+- **🎯 REFACTORED FEATURES**: Optimized code with performance improvements
 - **Performance Benchmarking**: console.time for performance tracking
+- **In-Memory Caching**: 96% performance improvement for GET requests
+- **Optimized Database Queries**: Removed expensive subqueries
+- **Type Safety**: Comprehensive Zod validation schemas
+- **Async Operations**: Non-blocking logging and operations
 - **Complex Data Structure**: Multiple tables with relationships
 - **Data Quality Issues**: NULL and DUPLICATE data for ETL practice
 - **User Profile Management**: Complete profile with address, phone, birth date
 - **Division Filtering**: Real-time filtering by division with poor performance
 - **Enhanced User List**: Display address and division information
+
+## 🎯 Refactoring Improvements
+
+This repository contains the **refactored and optimized version** of the original workshop project. Major improvements include:
+
+### Performance Optimizations
+- **96% faster GET Profile API** (15ms vs 372ms average with caching)
+- **49% faster PUT Profile API** (35ms vs 69ms average)
+- **In-memory caching** with ETag support and 5-minute TTL
+- **Optimized database queries** removing expensive subqueries
+- **Asynchronous logging** eliminating blocking operations
+
+### Code Quality Improvements
+- **TypeScript enhancements** with proper interfaces and type safety
+- **Zod validation schemas** for robust input validation
+- **Modern React patterns** with useCallback and performance optimizations
+- **Better error handling** with structured responses
+- **Comprehensive testing** infrastructure
+
+### Documentation
+- **📊 REFACTORING_RESULTS.md**: Complete performance analysis
+- **📈 PERFORMANCE_REPORT.md**: Detailed performance metrics
+- **🔧 Performance test scripts**: Automated testing tools
+
+For the original legacy code examples, see: [demo-repository](https://github.com/BINAR-Learning/demo-repository)
 
 ## 📋 Prerequisites
 
@@ -68,10 +97,10 @@ touch .env.local
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
-   cd demo-repository
+   git clone https://github.com/BINAR-Learning/demo-repository-riza.git
+   cd demo-repository-riza
    git fetch
-   git checkout Module-5
+   git checkout main
    ```
 
 2. **Install dependencies**
