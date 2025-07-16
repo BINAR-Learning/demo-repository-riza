@@ -1,0 +1,49 @@
+{
+  "login": [
+    781.847
+  ],
+  "getProfile": [
+    14.2355,
+    15.8871,
+    17.4016,
+    18.3399,
+    2498.8493
+  ],
+  "updateProfile": [
+    44.047,
+    45.18,
+    335.9602
+  ],
+  "summary": {
+    "login": {
+      "count": 1,
+      "min": 781.847,
+      "max": 781.847,
+      "average": 781.847,
+      "median": 781.847,
+      "total": 781.847
+    },
+    "getProfile": {
+      "count": 5,
+      "min": 14.2355,
+      "max": 2498.8493,
+      "average": 512.9426799999999,
+      "median": 17.4016,
+      "total": 2564.7133999999996
+    },
+    "updateProfile": {
+      "count": 3,
+      "min": 44.047,
+      "max": 335.9602,
+      "average": 141.72906666666665,
+      "median": 45.18,
+      "total": 425.18719999999996
+    },
+    "timestamp": "2025-07-16T03:53:48.843Z",
+    "testConditions": {
+      "apiBaseUrl": "http://localhost:3001",
+      "nodeVersion": "v22.17.0",
+      "platform": "win32"
+    }
+  }
+}
